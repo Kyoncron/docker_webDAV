@@ -1,5 +1,15 @@
 # WebDAV con Apache en Docker
 
+<div align="center">
+
+![WebDAV](https://img.shields.io/badge/WebDAV-Server-red?style=for-the-badge)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker)
+![Linux](https://img.shields.io/badge/Linux-Compatible-green?style=for-the-badge&logo=linux)
+![CloudFlare](https://img.shields.io/badge/CloudFlare-Secure-yellow?style=for-the-badge&logo=cloudflare)
+
+
+</div>
+
 Resumen
 -------
 Este proyecto despliega un servidor WebDAV (Apache HTTPD 2.4) en Docker para que varios usuarios se conecten a su carpeta personal. La conexión se expone a través de Dokploy y pasa por Cloudflare (DNS/CDN/proxy).
