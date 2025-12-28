@@ -1,0 +1,11 @@
+services:
+  webdav:
+    image: httpd:2.4
+    restart: unless-stopped
+    environment:
+      DAV_DOMAIN: ${DAV_DOMAIN}
+    volumes:
+      - ${DIR_USER}:/var/webdav
+      - ${HTTPD_CONF}:/usr/local/apache2/conf/httpd.conf:ro
+      - ${PASS_USERS}:/usr/local/apache2/conf/htpasswd:ro
+      - ${ERROR_FILES}:/usr/local/apache2/htdocs/site:ro
